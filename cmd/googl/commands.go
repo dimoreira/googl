@@ -52,6 +52,7 @@ func Shorten(c *cli.Context) {
 func Expand(c *cli.Context) {
 	url := c.Args().First()
 	key := c.String("key")
-	fmt.Println("Url:", url)
-	fmt.Println("API Key:", key)
+	client := googl.NewClient(key)
+	longUrl := client.Expand(url)
+	fmt.Println("Long Url:", longUrl)
 }
