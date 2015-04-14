@@ -1,4 +1,4 @@
-# googl
+# googl [WIP]
 
 A library (and CLI) for Google Url Shortener service.
 
