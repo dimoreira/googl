@@ -10,16 +10,16 @@ type Googl struct {
 }
 
 type ShortMsg struct {
-	Kind string `json:"kind"`
-	Id string `json:"id"`
+	Kind    string `json:"kind"`
+	Id      string `json:"id"`
 	LongUrl string `json:"longUrl"`
 }
 
 type LongMsg struct {
-	Kind string `json:"kind"`
-	Id string `json:"id"`
+	Kind    string `json:"kind"`
+	Id      string `json:"id"`
 	LongUrl string `json:"longUrl"`
-	Status string `json:"status"`
+	Status  string `json:"status"`
 }
 
 func NewClient(key string) *Googl {

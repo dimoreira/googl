@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"github.com/codegangsta/cli"
+	"os"
 )
 
 func main() {

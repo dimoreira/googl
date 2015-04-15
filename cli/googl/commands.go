@@ -12,14 +12,14 @@ var Commands = []cli.Command{
 }
 
 var shorten = cli.Command{
-	Name: "shorten",
+	Name:  "shorten",
 	Usage: "Shorten an url",
 	Description: `
 		Shorten a given url with Google URL Shortener service.
 	`,
 	Flags: []cli.Flag{
 		cli.StringFlag{
-			Name: "k, key",
+			Name:  "k, key",
 			Usage: "your Google Url Shortener Public API Key",
 		},
 	},
@@ -27,14 +27,14 @@ var shorten = cli.Command{
 }
 
 var expand = cli.Command{
-	Name: "expand",
+	Name:  "expand",
 	Usage: "Expand an url",
 	Description: `
 		Expand a given short url with Google URL Shortener service.
 	`,
 	Flags: []cli.Flag{
 		cli.StringFlag{
-			Name: "k, key",
+			Name:  "k, key",
 			Usage: "your Google Url Shortener Public API Key",
 		},
 	},
