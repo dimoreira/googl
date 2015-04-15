@@ -18,5 +18,5 @@ go get github.com/dimoreira/googl
 googl shorten -k <your-api-key> <url-to-be-shortened>
 
 // Expand an url
-google expand -k <your-api-key> <url-to-be-expanded>
+googl expand -k <your-api-key> <url-to-be-expanded>
 ```

@@ -15,12 +15,12 @@ var shorten = cli.Command{
 	Name: "shorten",
 	Usage: "Shorten an url",
 	Description: `
-	Shorten a given url with Google URL Shortener service.
+		Shorten a given url with Google URL Shortener service.
 	`,
 	Flags: []cli.Flag{
 		cli.StringFlag{
 			Name: "k, key",
-			Usage: "you Google Url Shortener Public API Key",
+			Usage: "your Google Url Shortener Public API Key",
 		},
 	},
 	Action: Shorten,
@@ -30,12 +30,12 @@ var expand = cli.Command{
 	Name: "expand",
 	Usage: "Expand an url",
 	Description: `
-	Expand a given short url with Google URL Shortener service.
+		Expand a given short url with Google URL Shortener service.
 	`,
 	Flags: []cli.Flag{
 		cli.StringFlag{
 			Name: "k, key",
-			Usage: "you Google Url Shortener Public API Key",
+			Usage: "your Google Url Shortener Public API Key",
 		},
 	},
 	Action: Expand,
@@ -46,7 +46,7 @@ func Shorten(c *cli.Context) {
 	key := c.String("key")
 	client := googl.NewClient(key)
 	shortUrl := client.Shorten(url)
-	fmt.Println("Short Url:", shortUrl)
+	fmt.Println("shorten:", shortUrl)
 }
 
 func Expand(c *cli.Context) {
@@ -54,5 +54,5 @@ func Expand(c *cli.Context) {
 	key := c.String("key")
 	client := googl.NewClient(key)
 	longUrl := client.Expand(url)
-	fmt.Println("Long Url:", longUrl)
+	fmt.Println("expand:", longUrl)
 }
