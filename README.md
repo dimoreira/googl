@@ -11,6 +11,12 @@ To install the library:
 go get github.com/dimoreira/googl
 ```
 
+To install the library with the CLI:
+
+```
+go get github.com/dimoreira/googl/cli/googl
+```
+
 ## Usage
 
 ```
